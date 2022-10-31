@@ -19,6 +19,10 @@ function autoCdnUrl($path) {
     }
 }
 
+function myTest() {
+    return  Helper::options()->JCDNUrl;
+}
+
 /* 获取懒加载图片 */
 function GetLazyLoad()
 {
