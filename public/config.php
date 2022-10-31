@@ -1,8 +1,8 @@
 <!-- 音乐播放器 -->
 <?php if ($this->options->JPlayer && !isMobile()) : ?>
     <meting-js id="<?php $this->options->JPlayer(); ?>" lrc-type="1" server="netease" storage-name="meting" theme="#ebebeb" autoplay type="playlist" fixed="true" list-olded="true"></meting-js>
-     <script src="/usr/themes/Typecho-Joe-Theme/js/npm/APlayer.min.js"></script>
-     <script src="/usr/themes/Typecho-Joe-Theme/js/npm/Meting.min.js"></script>
+    <script src="<?php echo autoCdnUrl('assets/js-local/npm/APlayer.min.js'); ?>"></script>
+    <script src="<?php echo autoCdnUrl('assets/js-local/npm/Meting.min.js'); ?>"></script>
 <?php endif; ?>
 
 <?php $this->footer(); ?>
@@ -20,7 +20,6 @@
 <!-- live2d -->
 <?php if ($this->options->JLive2D !== 'off' && !isMobile()) : ?>
     <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.min.js"></script>
-    <!--<script src="/usr/themes/Typecho-Joe-Theme/js/npm/L2D/L2Dwidget.min.js"></script>-->
 <?php endif; ?>
 
 
