@@ -11,13 +11,21 @@ function JoeVersion()
     return "1.1.9";
 }
 
+function autoCdnUrl($path) {
+    if (Helper::options()->JCDNUrl) {
+        return Helper::options()->JCDNUrl . $path;
+    } else {
+        return Helper::options()->themeUrl($path);
+    }
+}
+
 /* 获取懒加载图片 */
 function GetLazyLoad()
 {
     if (Helper::options()->JLazyLoad) {
         return Helper::options()->JLazyLoad;
     } else {
-        return "https://cdn.jsdelivr.net/npm/typecho_joe_theme/assets/img/lazyload.jpg";
+        return autoCdnUrl("/assets/img/lazyload.jpg");
     }
 }
 

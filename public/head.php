@@ -94,15 +94,9 @@
     <link rel="stylesheet" href="/usr/themes/Typecho-Joe-Theme/css/npm/swiper.min.css">
 <?php endif; ?>
 
-<?php if ($this->options->JCDN === 'on') : ?>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typecho_joe_theme@<?php echo JoeVersion() ?>/assets/css/OwO.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typecho_joe_theme@<?php echo JoeVersion() ?>/assets/css/joe.min.css?v=<?php echo JoeVersion() ?>" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typecho_joe_theme@<?php echo JoeVersion() ?>/assets/css/joe.responsive.min.css?v=<?php echo JoeVersion() ?>" />
-<?php else : ?>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/OwO.min.css'); ?>" />
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/joe.min.css?v=' . JoeVersion()); ?>" />
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/joe.responsive.min.css?v=' . JoeVersion()); ?>" />
-<?php endif; ?>
+<link rel="stylesheet" href="<?php $this->options->autoCdnUrl('assets/css/OwO.min.css'); ?>" />
+<link rel="stylesheet" href="<?php $this->options->autoCdnUrl('assets/css/joe.min.css?v=' . JoeVersion()); ?>" />
+<link rel="stylesheet" href="<?php $this->options->autoCdnUrl('assets/css/joe.responsive.min.css?v=' . JoeVersion()); ?>" />
 
 <!-- joe 弹窗提示 -->
 <link rel="stylesheet" href="/usr/themes/Typecho-Joe-Theme/css/npm/joe.toast.min.css" />
