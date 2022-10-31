@@ -3338,7 +3338,7 @@ $(function() {
     var windowHalfY = window.innerHeight / 2;
     var particles = [];
     var particleImage = new Image();
-    particleImage.src = "/usr/themes/Typecho-Joe-Theme/assets/img/ice.png";
+    particleImage.src = "../img/ice.png";
     var snowNum = 300;
     function init() {
         camera = new THREE.PerspectiveCamera(75,containerWidth / containerHeight,1,10000);
