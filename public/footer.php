@@ -114,7 +114,8 @@ show_date_time();</script> </p>
     </svg>
 </div>
 <!--- 简繁转换开始 --->
-<script type="text/javascript" src="<?php $this->options->themeUrl(); ?>assets/js/tw_cn.js"></script>
+
+<script type="text/javascript" src="<?php autoCdnUrl('assets/js/tw_cn.js'); ?>"></script>
 <script type="text/javascript">
 var defaultEncoding = 0; //默认是否繁体，0-简体，1-繁体
 var translateDelay = 0; //延迟时间,若不在</body>前, 要设定延迟翻译时间, 如100表示100ms,默认为0
@@ -260,9 +261,9 @@ document.body.oncopy=function(){warning();}
 </div>
 </div>
 <?php endif; ?>
-<script type="text/javascript" src="<?php $this->options->themeUrl(); ?>assets/js/codecopy.js"></script>
-<script type="text/javascript" src="<?php $this->options->themeUrl(); ?>assets/js/axios.min.js"></script>
-<script type="text/javascript" src="<?php $this->options->themeUrl(); ?>/js/img.js"></script>
+<script src="<?php echo autoCdnUrl('assets/js/codecopy.js'); ?>"></script>
+<script src="<?php echo autoCdnUrl('assets/js/axios.min.js'); ?>"></script>
+<script src="<?php echo autoCdnUrl('assets/js-local/img.js'); ?>"></script>
 <div class="shadow" id="shadow">
     <div class="model">
         <div class="model-title">登录
