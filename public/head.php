@@ -37,7 +37,7 @@
 
 <script src="<?php echo autoCdnUrl('assets/js-local/npm/jquery.min.js'); ?>"></script>
 <script src="<?php echo autoCdnUrl('assets/js-local/alert.min.js'); ?>"></script>
-<script src="<?php echo autoCdnUrl('assets/js-local/snow.js'); ?>"></script>
+<script src="<?php echo autoCdnUrl('assets/js/snow.js'); ?>"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo autoCdnUrl('assets/css-local/alert.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo autoCdnUrl('assets/css-local/btn.css'); ?>">
 <!-- favicon图标 -->
