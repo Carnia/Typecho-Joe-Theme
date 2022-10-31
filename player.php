@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover" />
     <link rel="shortcut icon" href="https://xggm.top/favicon.ico" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.3/dist/plyr.min.css" />
+    <link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css-local/npm/plyr.min.css'); ?>" />
     <title>Joe Player</title>
     <style>
         html {
