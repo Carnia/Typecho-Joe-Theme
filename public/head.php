@@ -105,7 +105,7 @@
 <style>
     :root {
         --element: #409eff;
-        cursor: <?php echo $this->options->JCursorType !== 'off' ? 'url(' . THEME_URL . '\/assets\/cur\/' . $this->options->JCursorType . '), auto' : 'auto' ?>;
+        cursor: <?php echo $this->options->JCursorType !== 'off' ? 'url(' . autoCdnUrl('assets/cur/') . $this->options->JCursorType . '), auto' : 'auto' ?>;
         --classA: <?php echo $this->options->JClassA ? $this->options->JClassA : '#dcdfe6' ?>;
         --classB: <?php echo $this->options->JClassB ? $this->options->JClassB : '#e4e7ed' ?>;
         --classC: <?php echo $this->options->JClassC ? $this->options->JClassC : '#ebeef5' ?>;

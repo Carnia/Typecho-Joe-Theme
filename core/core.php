@@ -13,7 +13,14 @@ function JoeVersion()
 
 function autoCdnUrl($path) {
     if (Helper::options()->JCDNUrl) {
-        return Helper::options()->JCDNUrl . $path;
+        $url = Helper::options()->JCDNUrl;
+        if (substr($url, strlen($url) - 1) != "/") {
+            $url = $url . '/';
+        }
+        if (substr($path, 0, 1) == "/") {
+            $path = substr($path, 1);
+        }
+        return  $url . $path;
     } else {
         Helper::options()->themeUrl($path);
     }
@@ -694,16 +701,16 @@ function GetParentReply($parent)
 
 function ParsePaopaoBiaoqingCallback($match)
 {
-    return '<img class="owo" src="' . THEME_URL . '/assets/owo/paopao/' . str_replace('%', '', urlencode($match[1])) . '_2x.png">';
+    return '<img class="owo" src="' . autoCdnUrl('assets/owo/paopao/') . str_replace('%', '', urlencode($match[1])) . '_2x.png">';
 }
 
 function ParseAruBiaoqingCallback($match)
 {
-    return '<img class="owo" src="' . THEME_URL . '/assets/owo/aru/' . str_replace('%', '', urlencode($match[1])) . '_2x.png">';
+    return '<img class="owo" src="' . autoCdnUrl('assets/owo/aru/') . str_replace('%', '', urlencode($match[1])) . '_2x.png">';
 }
 function ParseBiliBiaoqingCallback($match)
 {
-    return '<img class="owo" src="' . THEME_URL . '/assets/owo/bili/' . str_replace('%', '', urlencode($match[1])) . '_2x.png">';
+    return '<img class="owo" src="' . autoCdnUrl('assets/owo/bili/') . str_replace('%', '', urlencode($match[1])) . '_2x.png">';
 }
 
 /* 格式化 */
