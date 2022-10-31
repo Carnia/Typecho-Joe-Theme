@@ -15,7 +15,7 @@ function autoCdnUrl($path) {
     if (Helper::options()->JCDNUrl) {
         return Helper::options()->JCDNUrl . $path;
     } else {
-        return Helper::options()->themeUrl($path);
+        Helper::options()->themeUrl($path);
     }
 }
 
