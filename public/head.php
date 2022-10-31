@@ -94,6 +94,8 @@
     <link rel="stylesheet" href="/usr/themes/Typecho-Joe-Theme/css/npm/swiper.min.css">
 <?php endif; ?>
 
+<meta name="<?php $this->options->themeUrl('assets/css/OwO.min.css'); ?>">
+<meta name="<?php echo $this->options->themeUrl('assets/css/OwO.min.css'); ?>">
 <link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css/OwO.min.css'); ?>" />
 <link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css/joe.min.css'); ?>" />
 <link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css/joe.responsive.min.css'); ?>" />
