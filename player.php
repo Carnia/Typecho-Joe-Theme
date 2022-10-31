@@ -33,8 +33,8 @@
 
 <body>
     <video playinline></video>
-    <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.3/dist/plyr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@0.14.16/dist/hls.min.js"></script>
+    <script src="<?php echo autoCdnUrl('assets/js-local/npm/plyr.min.js'); ?>"></script>
+    <script src="<?php echo autoCdnUrl('assets/js-local/npm/hls.min.js'); ?>"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             /* 获取播放器组件 */
