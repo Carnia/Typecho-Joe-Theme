@@ -94,10 +94,9 @@
     <link rel="stylesheet" href="/usr/themes/Typecho-Joe-Theme/css/npm/swiper.min.css">
 <?php endif; ?>
 
-<meta name="<?php echo myTest() ?>">
-<link rel="stylesheet" href="<?php autoCdnUrl('assets/css/OwO.min.css'); ?>" />
-<link rel="stylesheet" href="<?php autoCdnUrl('assets/css/joe.min.css?v=' . JoeVersion()); ?>" />
-<link rel="stylesheet" href="<?php autoCdnUrl('assets/css/joe.responsive.min.css?v=' . JoeVersion()); ?>" />
+<link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css/OwO.min.css'); ?>" />
+<link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css/joe.min.css?v=' . JoeVersion()); ?>" />
+<link rel="stylesheet" href="<?php echo autoCdnUrl('assets/css/joe.responsive.min.css?v=' . JoeVersion()); ?>" />
 
 <!-- joe 弹窗提示 -->
 <link rel="stylesheet" href="/usr/themes/Typecho-Joe-Theme/css/npm/joe.toast.min.css" />
