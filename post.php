@@ -127,7 +127,7 @@ if (isset($_POST['agree'])) {
                             } else {
                                 $content = preg_replace("/\[hide\](.*?)\[\/hide\]/sm", '<p class="need-reply">此处内容 <span data-href="comments">回复</span> 可见</p>', $this->content);
                             }
-                            echo $content
+                            echo _parseContent($this, $this->user->hasLogin())
                             ?>
           </div>
           <?php endif ?>
