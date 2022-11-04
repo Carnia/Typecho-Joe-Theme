@@ -38,6 +38,11 @@
 <script src="<?php echo autoCdnUrl('assets/js-local/npm/jquery.min.js'); ?>"></script>
 <script src="<?php echo autoCdnUrl('assets/js-local/alert.js'); ?>"></script>
 <script src="<?php echo autoCdnUrl('assets/js/snow.js'); ?>"></script>
+<!-- joe编辑器 -->
+<?php if ($this->options->JEditor === 'on') : ?>
+    <script src="<?php echo autoCdnUrl('assets/js/joe.short.min.js') ?>"></script>
+<?php endif; ?>
+
 <link rel="stylesheet" type="text/css" href="<?php echo autoCdnUrl('assets/css-local/alert.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo autoCdnUrl('assets/css-local/btn.css'); ?>">
 <!-- favicon图标 -->
