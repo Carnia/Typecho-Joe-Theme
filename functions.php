@@ -635,7 +635,20 @@ function themeConfig($form)
     $JDocumentWAPBG->setAttribute('class', 'j-setting-content j-setting-image');
     $form->addInput($JDocumentWAPBG);
 
-    /* 文章设置 */       
+    /* 文章设置 */     
+    $JEditor = new Typecho_Widget_Helper_Form_Element_Select(
+        'JEditor',
+        array(
+            'on' => '开启（默认）',
+            'off' => '关闭',
+        ),
+        'on',
+        '是否启用Joe自定义编辑器',
+        '介绍：开启后，文章编辑器将替换成Joe编辑器 <br>
+         其他：目前编辑器处于拓展阶段，如果想继续使用原生编辑器，关闭此项即可'
+    );
+    $JEditor->setAttribute('class', 'joe_content joe_post');
+    $form->addInput($JEditor->multiMode());  
 
     $JBreadStatus = new Typecho_Widget_Helper_Form_Element_Select(
         'JBreadStatus',

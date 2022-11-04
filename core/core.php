@@ -5,6 +5,9 @@ $str2 = explode('/', $str1[1]);
 define("THEME_NAME", $str2[0]);
 require 'ipdata.class.php';
 
+/* 插件方法 */
+require_once('factory.php');
+
 /* 获取模板版本号 */
 function JoeVersion()
 {
