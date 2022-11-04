@@ -3572,34 +3572,34 @@ table {
 	font-family: consolas
 }
 
-.j-post .main .markdown {
+.j-post .main .markdown-deprecated {
 	word-wrap: break-word;
 	font-size: 15px
 }
 
-.j-post .main .markdown h1,.j-post .main .markdown h2,.j-post .main .markdown h3,.j-post .main .markdown h4,.j-post .main .markdown h5,.j-post .main .markdown h6 {
+.j-post .main .markdown-deprecated h1,.j-post .main .markdown-deprecated h2,.j-post .main .markdown-deprecated h3,.j-post .main .markdown-deprecated h4,.j-post .main .markdown-deprecated h5,.j-post .main .markdown-deprecated h6 {
 	color: var(--main);
 	margin: 20px 0;
 	font-size: 20px
 }
 
-.j-post .main .markdown h1 {
+.j-post .main .markdown-deprecated h1 {
 	position: relative
 }
 
-.j-post .main .markdown h1::before {
+.j-post .main .markdown-deprecated h1::before {
 	content: '#';
 	color: var(--theme);
 	margin-right: 7px;
 	font-weight: 600
 }
 
-.j-post .main .markdown h2 {
+.j-post .main .markdown-deprecated h2 {
 	position: relative;
 	padding: 0 15px
 }
 
-.j-post .main .markdown h2::before {
+.j-post .main .markdown-deprecated h2::before {
 	content: '';
 	position: absolute;
 	top: 10%;
@@ -3610,31 +3610,31 @@ table {
 	background: var(--theme)
 }
 
-.j-post .main .markdown h3 {
+.j-post .main .markdown-deprecated h3 {
 	position: relative
 }
 
-.j-post .main .markdown h3::before {
+.j-post .main .markdown-deprecated h3::before {
 	content: '「';
 	color: var(--theme);
 	margin-right: 5px;
 	font-weight: 600
 }
 
-.j-post .main .markdown h3::after {
+.j-post .main .markdown-deprecated h3::after {
 	content: '」';
 	color: var(--theme);
 	margin-left: 5px;
 	font-weight: 600
 }
 
-.j-post .main .markdown h4 span {
+.j-post .main .markdown-deprecated h4 span {
 	padding: 3px 0;
 	background: linear-gradient(to bottom, transparent 60%, rgba(189,202,219,0.3) 0) no-repeat;
 	line-height: 30px
 }
 
-.j-post .main .markdown h5 span {
+.j-post .main .markdown-deprecated h5 span {
 	position: relative;
 	-o-border-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1 1;
 	border-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1 1;
@@ -3647,7 +3647,7 @@ table {
 	padding-bottom: 3px
 }
 
-.j-post .main .markdown h6 span {
+.j-post .main .markdown-deprecated h6 span {
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23ff3300' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
 	background-size: 20px auto;
 	-webkit-animation: waveMove 1s infinite linear;
@@ -3656,59 +3656,59 @@ table {
 	padding-bottom: 5px
 }
 
-.j-post .main .markdown blockquote {
+.j-post .main .markdown-deprecated blockquote {
 	background: var(--classD);
 	padding: 15px 20px;
 	border-left: 4px solid var(--seat);
 	margin: 20px 0
 }
 
-.j-post .main .markdown blockquote p {
+.j-post .main .markdown-deprecated blockquote p {
 	font-weight: 500;
 	margin: 0
 }
 
-.j-post .main .markdown ol {
+.j-post .main .markdown-deprecated ol {
 	color: var(--routine);
 	margin: 20px 0;
 	padding: 0 40px
 }
 
-.j-post .main .markdown ol li {
+.j-post .main .markdown-deprecated ol li {
 	list-style: decimal;
 	margin-bottom: 10px;
 	line-height: 26px
 }
 
-.j-post .main .markdown ol li:last-child {
+.j-post .main .markdown-deprecated ol li:last-child {
 	margin-bottom: 0
 }
 
-.j-post .main .markdown ul {
+.j-post .main .markdown-deprecated ul {
 	color: var(--routine);
 	margin: 20px 0;
 	padding: 0 30px
 }
 
-.j-post .main .markdown ul li {
+.j-post .main .markdown-deprecated ul li {
 	list-style: disc;
 	margin-bottom: 10px;
 	line-height: 26px
 }
 
-.j-post .main .markdown ul li::marker {
+.j-post .main .markdown-deprecated ul li::marker {
 	color: var(--theme)
 }
 
-.j-post .main .markdown ul li:last-child {
+.j-post .main .markdown-deprecated ul li:last-child {
 	margin-bottom: 0
 }
 
-.j-post .main .markdown em {
+.j-post .main .markdown-deprecated em {
 	font-style: italic
 }
 
-.j-post .main .markdown table {
+.j-post .main .markdown-deprecated table {
 	width: 100%;
 	margin: 20px 0;
 	box-shadow: 1px 3px 5px rgba(0,0,0,1);
@@ -3716,35 +3716,35 @@ table {
 	-webkit-overflow-scrolling: touch
 }
 
-.j-post .main .markdown table thead th {
+.j-post .main .markdown-deprecated table thead th {
 	background: #bbbbbb;
 	color: var(--routine);
 	max-width: 250px
 }
 
-.j-post .main .markdown table td {
+.j-post .main .markdown-deprecated table td {
 	color: var(--routine)
 }
 
-.j-post .main .markdown table tr {
+.j-post .main .markdown-deprecated table tr {
 	background: var(--background)
 }
 
-.j-post .main .markdown table tr:nth-child(2n) {
+.j-post .main .markdown-deprecated table tr:nth-child(2n) {
 	background: var(--classD)
 }
 
-.j-post .main .markdown table th,.j-post .main .markdown table td {
+.j-post .main .markdown-deprecated table th,.j-post .main .markdown-deprecated table td {
 	padding: 10px;
 	max-width: 300px
 }
 
-.j-post .main .markdown iframe {
+.j-post .main .markdown-deprecated iframe {
 	border: none;
 	max-width: 100%
 }
 
-.j-post .main .markdown img:not(.owo) {
+.j-post .main .markdown-deprecated img:not(.owo) {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -3754,32 +3754,32 @@ table {
 	object-fit: cover
 }
 
-.j-post .main .markdown .owo {
+.j-post .main .markdown-deprecated .owo {
 	width: 24px
 }
 
-.j-post .main .markdown a {
+.j-post .main .markdown-deprecated a {
 	font-weight: 500;
 	color: var(--routine)
 }
 
-.j-post .main .markdown a:hover {
+.j-post .main .markdown-deprecated a:hover {
 	text-decoration: underline
 }
 
-.j-post .main .markdown hr {
+.j-post .main .markdown-deprecated hr {
 	margin: 20px 0;
 	border: none;
 	height: 1px;
 	background-color: var(--classB)
 }
 
-.j-post .main .markdown strong {
+.j-post .main .markdown-deprecated strong {
 	color: var(--main);
 	font-weight: 700
 }
 
-.j-post .main .markdown p {
+.j-post .main .markdown-deprecated p {
 	color: var(--routine);
 	line-height: 26px;
 	margin: 20px 0;
@@ -3791,7 +3791,7 @@ table {
 	text-indent: 10px
 }
 
-.j-post .main .markdown .hljs {
+.j-post .main .markdown-deprecated .hljs {
 	max-width: 100%;
 	max-height: 550px;
 	overflow: auto;
@@ -3802,31 +3802,31 @@ table {
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
 }
 
-.j-post .main .markdown .hljs::-webkit-scrollbar-track {
+.j-post .main .markdown-deprecated .hljs::-webkit-scrollbar-track {
 	border-radius: 0;
 	background: rgba(50,50,50,0.4)
 }
 
-.j-post .main .markdown .hljs ol {
+.j-post .main .markdown-deprecated .hljs ol {
 	color: unset;
 	margin: unset;
 	padding: unset;
 	border-left: 1px solid #ccc
 }
 
-.j-post .main .markdown .hljs ol li {
+.j-post .main .markdown-deprecated .hljs ol li {
 	margin-bottom: unset;
 	line-height: unset;
 	padding-left: 15px
 }
 
-.j-post .main .markdown .hljs-pre {
+.j-post .main .markdown-deprecated .hljs-pre {
 	position: relative;
 	padding-top: 30px;
 	margin: 20px 0
 }
 
-.j-post .main .markdown .hljs-pre::after {
+.j-post .main .markdown-deprecated .hljs-pre::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -3837,7 +3837,7 @@ table {
 	border-radius: 4px 4px 0 0
 }
 
-.j-post .main .markdown .hljs-pre::before {
+.j-post .main .markdown-deprecated .hljs-pre::before {
 	content: '';
 	position: absolute;
 	top: 9px;
@@ -3850,7 +3850,7 @@ table {
 	z-index: 1
 }
 
-.j-post .main .markdown .need-reply {
+.j-post .main .markdown-deprecated .need-reply {
     display: block;
     background: repeating-linear-gradient(145deg, var(--classD), var(--classD) 15px, var(--background) 0, var(--background) 25px);
     padding: 15px 0;
@@ -3863,18 +3863,18 @@ table {
     line-height: normal;
 }
 
-.j-post .main .markdown .need-reply span {
+.j-post .main .markdown-deprecated .need-reply span {
     position: relative;
     font-style: normal;
     color: var(--theme);
     cursor: pointer
 }
 
-.j-post .main .markdown .need-reply span:hover {
+.j-post .main .markdown-deprecated .need-reply span:hover {
 	text-decoration: underline
 }
 
-.j-post .main .markdown .reply-content {
+.j-post .main .markdown-deprecated .reply-content {
 	color: var(--routine);
 	line-height: 26px;
 	margin: 20px 0;
@@ -3885,19 +3885,19 @@ table {
 	word-break: break-all
 }
 
-.j-post .main .markdown .protected {
+.j-post .main .markdown-deprecated .protected {
 	display: flex;
 	justify-content: center;
 	padding: 30px;
 	background: var(--classB)
 }
 
-.j-post .main .markdown .protected .form {
+.j-post .main .markdown-deprecated .protected .form {
 	position: relative;
 	box-shadow: var(--box-shadow)
 }
 
-.j-post .main .markdown .protected .form svg {
+.j-post .main .markdown-deprecated .protected .form svg {
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -3907,7 +3907,7 @@ table {
 	left: 15px
 }
 
-.j-post .main .markdown .protected .form input[type='password'] {
+.j-post .main .markdown-deprecated .protected .form input[type='password'] {
 	width: 300px;
 	height: 44px;
 	padding: 0 43px;
@@ -3916,7 +3916,7 @@ table {
 	color: var(--routine)
 }
 
-.j-post .main .markdown .protected .form button[type='submit'] {
+.j-post .main .markdown-deprecated .protected .form button[type='submit'] {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -3927,18 +3927,18 @@ table {
 	transition: opacity 0.35s
 }
 
-.j-post .main .markdown .protected .form button[type='submit']:hover {
+.j-post .main .markdown-deprecated .protected .form button[type='submit']:hover {
 	opacity: 0.85
 }
 
-.j-post .main .markdown .iframe-dplayer {
+.j-post .main .markdown-deprecated .iframe-dplayer {
 	width: 100%;
 	height: 450px;
 	border: none;
 	margin: 20px 0
 }
 
-.j-post .main .markdown .iframe-music {
+.j-post .main .markdown-deprecated .iframe-music {
 	display: block;
 	margin: 20px auto
 }
