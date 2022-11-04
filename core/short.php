@@ -49,7 +49,6 @@ function _parseContent($post, $login)
         $content = preg_replace('/{message([^}]*)\/}/SU', '<joe-message $1></joe-message>', $content);
     }
     if (strpos($content, '{progress') !== false) {
-        $content = '?????' . $content;
         $content = preg_replace('/{progress([^}]*)\/}/SU', '<joe-progress $1></joe-progress>', $content);
     }
     if (strpos($content, '{hide') !== false) {

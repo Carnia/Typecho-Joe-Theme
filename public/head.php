@@ -40,6 +40,7 @@
 <script src="<?php echo autoCdnUrl('assets/js/snow.js'); ?>"></script>
 <!-- joe编辑器 -->
 <?php if ($this->options->JEditor === 'on') : ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo autoCdnUrl('assets/css/joe.global.min.css'); ?>">
     <script src="<?php echo autoCdnUrl('assets/js/joe.short.min.js') ?>"></script>
 <?php endif; ?>
 
