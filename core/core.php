@@ -1265,7 +1265,7 @@ class Editor
                 characterAPI: '<?php echo autoCdnUrl('library/joe.write/json/character.json') ?>',
                 playerAPI: '<?php Helper::options()->JCustomPlayer ? Helper::options()->JCustomPlayer() : Helper::options()->themeUrl('player.php?url=') ?>',
                 autoSave: <?php Helper::options()->autoSave(); ?>,
-                themeURL: '<?php echo autoCdnUrl(); ?>',
+                themeURL: '<?php echo autoCdnUrl(''); ?>',
                 canPreview: false
             }
         </script>
