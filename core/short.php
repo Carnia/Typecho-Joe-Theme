@@ -4,6 +4,7 @@ function _parseContent($post, $login)
 {
     $content = $post->content;
     $content = _parseReply($content);
+    echo strpos($content, '{progress');
 
     if (strpos($content, '{lamp/}') !== false) {
         $content = strtr($content, array(
